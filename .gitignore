@@ -1,0 +1,8 @@
+.DS_Store
+assets/
+dest/
+lib/
+npm-debug.log
+node_modules/
+node_modules.tar
+.idea
