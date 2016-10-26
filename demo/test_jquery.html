@@ -12,6 +12,9 @@
       $.get('http://api.mobile.meituan.com/data/collect.json?t=1476249255745', function(data) {
         console.log(data);
       });
+      $.post('http://api.mobile.meituan.com/data/collect.json',{ test: 1}, function(data) {
+        console.log(data);    
+      })
     }, 1000);
   </script>
 </body>

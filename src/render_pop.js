@@ -50,6 +50,9 @@ const switchBtn = (enable) => {
 
 const closeModal = () => {
   document.getElementById('js-mock-pop').className = 'mock-pop mock-pop-hidden';
+  setTimeout(() => {
+    window.location.reload();
+  }, 1000);
 }
 
 export default renderPop;
