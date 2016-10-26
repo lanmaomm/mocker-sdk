@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mock Test</title>
+	<meta charset="utf-8">
+<script src="./../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./../dest/main.js"></script>
+</head>
+<body>
+  <script>
+    setTimeout(function() {
+      $.get('http://api.mobile.meituan.com/data/collect.json?t=1476249255745', function(data) {
+        console.log(data);
+      });
+    }, 1000);
+  </script>
+</body>
+</html>
