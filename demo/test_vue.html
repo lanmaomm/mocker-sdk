@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mock Test on Vue</title>
+	<meta charset="utf-8">
+<script src="http://cdn.jsdelivr.net/vue/1.0.16/vue.js"></script>
+<script src="http://cdn.bootcss.com/vue-resource/1.0.3/vue-resource.js"></script>
+<script src="./../dest/main.js"></script>
+</head>
+<body>
+  <script>
+    setTimeout(function() {
+      Vue.http.get('http://api.mobile.meituan.com/data/collect.json?t=1476249255745', {t : 1476249255745})
+      .then(function(res) {
+        console.log(res);
+      });
+
+      Vue.http.post('http://api.mobile.meituan.com/data/collect.json', { test: 1})
+      .then(function(res) {
+        console.log(res);
+      });    
+    }, 1000);
+  </script>
+</body>
+<ml>
